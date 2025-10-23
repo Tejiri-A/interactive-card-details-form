@@ -63,3 +63,22 @@
 @utility text-7 {
   @apply text-xs leading-[1.20] tracking-[1.25px];
 }
+
+.mainBg {
+  background-image: url(./assets/images/bg-main-mobile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media (width>=1200px) {
+    background-image: url(./assets/images/bg-main-desktop.png);
+  }
+}
+
+@layer components {
+  .front-card {
+    @apply bg-[url(./assets/images/bg-card-front.png)] bg-center bg-no-repeat bg-cover w-[285px] md:w-[447px] h-[156px] md:h-[245px] p-2 md:p-3;
+  }
+  .back-card {
+    @apply bg-[url(./assets/images/bg-card-back.png)] bg-center bg-no-repeat bg-cover w-[285px] md:w-[447px] h-[156px] md:h-[245px];
+  }
+}
