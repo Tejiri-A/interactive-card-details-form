@@ -1,1 +1,65 @@
-@import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* color palette */
+  --color-grey-950: #2f2f2f;
+  --color-grey-400: #adb5be;
+  --color-grey-200: #dfdee0;
+
+  --color-purple-950: #21092f;
+  --color-purple-500: #d53aff;
+
+  --color-orange-400: #ff834a;
+
+  --color-blue-400: #47a2ff;
+
+  --color-red-400: #ff5050;
+
+  /* spacing scale */
+  --spacing: 0.5rem;
+
+  /* typography */
+  --default-font-family: "Space Grotesk", sans-serif;
+  --text-xs: 0.5625rem; /* 9px */
+  --text-sm: 0.75rem; /* 12px */
+  --text-base: 0.875rem; /* 14px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.75rem; /* 28px */
+}
+
+@utility gradient-1 {
+  @apply bg-linear-to-br from-[#FFFFFF] to-[#D2D3D9];
+}
+
+@utility gradient-2 {
+  @apply bg-linear-to-br from-[#6348FE] to-[#610595];
+}
+
+@utility text-1 {
+  @apply font-medium text-xl leading-tight tracking-[3.5px];
+}
+
+@utility text-2 {
+  @apply font-medium text-lg leading-tight tracking-[2.5px];
+}
+
+@utility text-3 {
+  @apply font-medium text-xl leading-tight tracking-normal;
+}
+
+@utility text-4 {
+  @apply font-medium text-base leading-tight tracking-[2px];
+}
+
+@utility text-5 {
+  @apply font-medium text-sm leading-[1.20] tracking-[2px];
+}
+
+@utility text-6 {
+  @apply text-sm leading-[1.20] tracking-normal;
+}
+
+@utility text-7 {
+  @apply text-xs leading-[1.20] tracking-[1.25px];
+}
